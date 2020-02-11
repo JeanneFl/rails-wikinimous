@@ -1,0 +1,16 @@
+
+<h1>My articles</h1>
+
+
+<ul>
+  <% @articles.each do |article| %>
+    <label><%= link_to article.title, "/articles/#{article.id}" %></label>
+    <p><%= article.content %></p>
+  </div>
+  <% end %>
+</ul>
+
+<%= link_to "create a new article", articles_path %>
+
+
+
